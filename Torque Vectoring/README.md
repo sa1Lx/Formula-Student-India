@@ -35,25 +35,12 @@ moment of inertia Izz. To describe the model, 3 cartesian coordinate frames are 
 The transformation from the
 vehicles’ frame to the inertial frame (IRB), the Euler angle rotation matrix is used:
 (Note: we are only interested in studying the movement in the xy plane, which means that null roll and pitch are assumed)
-$
-^I R_B =
-\begin{bmatrix}
-\cos(\psi) & -\sin(\psi) & 0 \\
-\sin(\psi) & \cos(\psi) & 0 \\
-0 & 0 & 1
-\end{bmatrix}
-$
+
+![matrix1](images/matrix1.png)
 
 The path of the vehicle will be obtained by the integration of the vehicle’s velocity $^B v$ with respect to time, and rotated to the inertial frame $^I v$, by a yaw angle ($\psi$).
 
-$
-^I v = ^I R_B * ^B v =
-\begin{bmatrix}
-^B \dot x  \cos(\psi) - ^B \dot y \sin(\psi) \\
-^B \dot x \sin(\psi) + ^B \dot y \cos(\psi) \\
-0
-\end{bmatrix}
-$
+![matrix2](images/matrix2.png)
 
 The position of the car is therefore defined by the previous position ($x_0$) and the distance covered in the x and y direction between time $t_0$ and $t$:
 
