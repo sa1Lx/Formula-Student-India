@@ -63,31 +63,36 @@ Marks the start of a CAN message using a dominant bit. (logic 0)
 
 ### 2. Message Identifier
 
+During the CAN data transmission no stations are addressed but the content of a message is 
+marked by a network-wide clear identifier.
 The identifier is a unique number that identifies the message. It can be either 11 bits (standard frame) or 29 bits (extended frame). Lower values have higher priority.
 
 Since the IDs are used for unique messages and nodes, with a longer ID we can have more number of unique messages and devices with more priority levels. The standard frame allows a maximum of $2^{11}$ = 2048 IDs and the extended frame allows $2^{29}$ = 536870912 IDs. That’s a huge difference. Cool thing is that both standard and extended frames can be used on the same bus. But as we have seen before, the lower IDs with more numbers of 0s on the MSB side will always win the arbitration. So standard frames get priority over extended frames.
 
+### 3. RTR bit (Remote Transmission Request)
 
-### 3. Control Field (Check Field)
+Indicates whether the message is a data frame (RTR = 0) or a remote frame (RTR = 1). In a remote frame, the node requests data from another node.
+
+### 4. Control Field (Check Field)
 
 Tells how many data bytes are present in the message.
 Helps the receiver verify if the full message has been received.
 
-### 4. Data Field
+### 5. Data Field
 
 This is the actual information being sent to other CAN nodes.
 Can carry 0 to 8 bytes of data in classical CAN (up to 64 bytes in CAN-FD).
 
-### 5. CRC (Cyclic Redundancy Check)
+### 6. CRC (Cyclic Redundancy Check)
 Also called the Safety Field.
 Includes a 15-bit checksum to detect errors in transmission.
 Ends with a delimiter bit to separate this section.
 
-### 6. ACK (Acknowledge Field)
+### 7. ACK (Acknowledge Field)
 After receiving the message, nodes use this field to confirm it was received correctly.
 If there's an error, receivers stay silent, and the transmitter resends the message.
 
-### 7. EF (End Field)
+### 8. EF (End Field)
 Signals the end of the CAN message.
 Also a last chance to report errors, triggering a retransmission if needed.
 
