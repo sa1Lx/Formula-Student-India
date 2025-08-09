@@ -22,3 +22,9 @@ It's a comprehensive software package designed to cover the entire development l
 10. ***Multi-Core Support***: Supports development for dual-core microcontrollers and microprocessors, such as the STM32H7 series, which feature both Cortex-M and Cortex-A cores.
 
 
+# STM32CubeMX
+
+STM32CubeMX is a graphical tool that allows a very easy configuration of STM32 microcontrollers and microprocessors, as well as the generation of the corresponding initialization C code for the Arm® Cortex®-M core or a partial Linux® Device Tree for Arm® Cortex®-A core, through a step-by-step process.
+
+The first step consists in selecting either an STMicrolectronics STM32 microcontroller, microprocessor or a development platform that matches the required set of peripherals, or an example running on a specific development platform.
+
