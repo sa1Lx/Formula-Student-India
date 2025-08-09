@@ -6,7 +6,7 @@
 
 We begin with 2 main switches: LVMS (Low Voltage Main Switch) and TSMS (Tractive System Main Switch).
 
-![image2](images/image2.jpg)
+![image2](images/image2.png)
 
 We close the LVMS switch first, which triggers the green TSAL (Tractive System Active Light) contingent these conditions:
 * All AIRs are opened.
