@@ -9,20 +9,20 @@ Note- SCS include, signals which influence actions of SDC, influence the wheel t
 
 * T 11.9.2: Any of the following SCS single failures must result in a safe state of all connected systems:
 
-a. Failures of signals transmitted by cable:<br>
-    - Open circuit
-    - Short circuit to ground
+a. Failures of signals transmitted by cable:
+   - Open circuit
+   - Short circuit to ground
 
-b. Failures of analog sensor signals transmitted by cable:<br>
-    - Short circuit to supply voltage
+b. Failures of analog sensor signals transmitted by cable:
+   - Short circuit to supply voltage
 
-c. Failures of sensor signals used in programmable devices:<br>
-    - Implausibility due to out of range signals, e.g. mechanically impossible angle of
-    an angle sensor.
+c. Failures of sensor signals used in programmable devices:
+   - Implausibility due to out of range signals, e.g. mechanically impossible angle of
+   an angle sensor.
 
-d. Failures of digitally transmitted signals by cable or wireless:<br>
-    - Data corruption (e.g. checked by a checksum)
-    - Loss and delay of messages (e.g. checked by transmission time outs)
+d. Failures of digitally transmitted signals by cable or wireless:
+   - Data corruption (e.g. checked by a checksum)
+   - Loss and delay of messages (e.g. checked by transmission time outs)
 
 Signals might be a member of multiple signal classes, e.g. analog signals transmitted by
 cable might be a member of T 11.9.2.a, T 11.9.2.b and T 11.9.2.c.
