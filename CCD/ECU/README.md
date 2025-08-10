@@ -93,7 +93,8 @@ Test points are provided for easy access to the signals at various stages of the
 
 ![image16](images/image16.png)
 
-This circuit sets the HIGH signal from `>95%_ACU`, `C+`, and `C-` to LOW (logic TRUE) signal for the Teensy 4.0.
+This circuit sets the HIGH(logic TRUE) signal from `>95%_ACU`, `C+`, and `C-` to LOW (logic TRUE) signal for the Teensy 4.0.
+Also it sets the LOW(logic TRUE) signal from `IGNITION_SWITCH` to HIGH (logic TRUE) signal for the Teensy 4.0.
 
 ## 9. CAN Transcievers Block
 
