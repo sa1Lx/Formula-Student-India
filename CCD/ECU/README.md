@@ -1,7 +1,6 @@
 # PCB Explanation
 
 ## 1. Power Block
-![image1](images/image1.png)
 
 ### SUPPLY_MC & 12V_SUPPLY
 
