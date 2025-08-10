@@ -127,5 +127,5 @@ When `ECU_MC_ERR_SIG` is high, `TR` goes high, making it greater than 1/3`VCC`, 
 
 ![image21](images/image21.png)
 
-//
+// good for nothing relay ig
 
