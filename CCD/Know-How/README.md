@@ -22,6 +22,7 @@ We are now ready to drive the vehicle.
 
 ## Shutdown Sequence
 
-The driver has a shutdown button at the cockpit (and 2 at his left and right side). When the driver presses the shutdown button, the SDC opens up, triggering the bleeding resistor to discharge the capacitors safely. This opens up the AIRs and cutoffs the accumulator from the MC, as well as the LV battery.
+The driver has a shutdown button at the cockpit (and 2 at his left and right side). When the driver presses the shutdown button, the SDC opens up, triggering the bleeding resistor (discharge resistor present in EM Box) to discharge the capacitors safely. This opens up the AIRs and cutoffs the accumulator from the MC, as well as the LV battery.
+Can also use HVD to disconnect the HV from the rest of the car.
 
 To start up again, the driver turns the shutdown button and presses HV RESET.
