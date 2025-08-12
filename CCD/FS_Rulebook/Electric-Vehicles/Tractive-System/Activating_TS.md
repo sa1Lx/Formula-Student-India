@@ -8,7 +8,7 @@ Note- Using the shutdown button in the cockpit.
 
 * EV 4.11.3: The ASR(Autonomous System Responsible) must be able to activate the TS from outside the vehicle with an external TS activation button in proximity to the TSMS if and only if the ASMS(Autonomous System Master Switch) is in “On” position.
 
-Note- TSMS?
+Note- HV RESET AS
 
 * EV 4.11.4: Closing the SDC by any part defined in EV6.1.2 must not (re-)activate the TS. Additional action must be required.
 
